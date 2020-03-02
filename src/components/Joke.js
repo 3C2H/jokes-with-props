@@ -6,7 +6,7 @@ class Joke extends React.Component {
     if (this.props.question === '') {
       return(
         <div className='jokeContainer'>
-          <h3 className='punchLine' style={{ marginTop:0 }} > {this.props.punchLine} </h3>
+          <h3 className='punchLine' style={{ marginTop:0, color:'green'}} > {this.props.punchLine} </h3>
         </div>
       )
     }
