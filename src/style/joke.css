@@ -4,4 +4,9 @@
   margin-bottom: 20px;
   border-bottom: 1px solid;
   width: 80%;
-}
+}.question {
+  font-style: italic;
+  color: green;
+}.punchLine{
+
+};
