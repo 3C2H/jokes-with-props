@@ -1,5 +1,4 @@
 .jokeContainer {
-  margin-left: auto;
   margin-top: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid;
@@ -7,6 +6,7 @@
 }.question {
   font-style: italic;
   color: green;
-}.punchLine{
+}
+/* .punchLine{
 
-};
+}; */
