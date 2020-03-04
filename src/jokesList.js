@@ -6,8 +6,8 @@ module.exports = {
     punchLine : 'A Fender bender',
   },
   joke2 : {
-    question : ' "What is it called when a snowman has a temper tantrum?',
-    punchLine : 'A meltdown!" ',
+    question : ' "What is it called when a snowman has a temper tantrum?" ',
+    punchLine : 'A meltdown!',
   },
   joke3 : {
     question : ' "Why did the teddy bear say no to dessert?" ',
@@ -20,7 +20,7 @@ module.exports = {
   },
   joke5 : {
     question : '',
-    punchLine : ' "...I asked my French friend if she likes to play video games. She said, “Wii.” " ',
+    punchLine : ' "...I asked my French friend if she likes to play video games. She said, “Wii !” " ',
   }
 }
 
