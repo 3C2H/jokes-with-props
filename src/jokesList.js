@@ -1,28 +1,31 @@
-module.exports = {
-  
-  joke1 : {
-    question : ' "What do you call it when two rock guitars accidentally crash into each other?" ',
-    
-    punchLine : 'A Fender bender',
+module.exports =
+[
+  {
+    id: 1,
+    question : ' "What do you call it when two rock guitars accidentally crash into each other?" ',   
+    punchline : 'A Fender bender',
   },
-  joke2 : {
+  {
+    id: 2,
     question : ' "What is it called when a snowman has a temper tantrum?" ',
-    punchLine : 'A meltdown!',
+    punchline : 'A meltdown!',
   },
-  joke3 : {
+  {
+    id: 3, 
     question : ' "Why did the teddy bear say no to dessert?" ',
-    
-    punchLine : 'Because she was stuffed',
+    punchline : 'Because she was stuffed',
   },
-  joke4 : {
+  {
+    id: 4,
     question : '',
-    punchLine : ' "...RIP boiling water—you will be mist" ',
+    punchline : ' "...RIP boiling water—you will be mist" ',
   },
-  joke5 : {
+  {
+    id: 5,
     question : '',
-    punchLine : ' "...I asked my French friend if she likes to play video games. She said, “Wii !” " ',
-  }
-}
+    punchline : ' "...I asked my French friend if she likes to play video games. She said, “Wii !” " ',
+  },
+]
 
 
 

@@ -1,12 +1,14 @@
 import React from 'react'
 import '../style/joke.css'
 
+
 class Joke extends React.Component {
-  render() {
+	render()
+	{
 		if (this.props.question === '') {
 			return(
         <div className='jokeContainer'>
-          <h2 className='punchLine' style={{ marginTop:0, color:'green'}} > {this.props.punchLine} </h2>
+          <h2 className='punchLine' style={{ marginTop:0, color:'green'}} > {this.props.punchline} </h2>
         </div>
       )
     }
@@ -14,7 +16,7 @@ class Joke extends React.Component {
     return(
       <div className='jokeContainer'>
         <h2 className='question'> {this.props.question} </h2> <br></br>
-        <h3 className='punchLine'> {this.props.punchLine} </h3>
+        <h3 className='punchLine'> {this.props.punchline} </h3>
       </div>
 		)
   }
