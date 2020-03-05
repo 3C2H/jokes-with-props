@@ -2,25 +2,45 @@ import React from 'react'
 import '../style/joke.css'
 import JokesList from '../jokesList'
 
+function Joke(props) {
+	return(
+		<div>
+			<h2 className='question'> {props.joke.question} </h2> <br></br>
+      <h3 className='punchline'> {props.joke.punchline} </h3>
+		</div>
+	)
+}
 
+
+// // // non-working test of mapping in component
 // class Joke extends React.Component {
-// 	render()
-// 	{
-// 		if (this.props.question === '') {
-// 			return(
-//         <div className='jokeContainer'>
-//           <h2 className='punchline' style={{ marginTop:0, color:'green'}} > {this.props.punchline} </h2>
-//         </div>
-//       )
-//     }
-//     else
-//     return(
-//       <div className='jokeContainer'>
-//         <h2 className='question'> {this.props.question} </h2> <br></br>
-//         <h3 className='punchline'> {this.props.punchline} </h3>
-//       </div>
+// 	render()	{
+// 		const mappedJokes = JokesList.map(joke => <Joke key={joke.id} question={joke.question} punchline={joke.punchline} />
 // 		)
-//   }
+// 		return(
+// 			console.log(mappedJokes),
+// 			<div className='jokeContainer'>
+// 				<h2 className='question'> {this.props.question} </h2> <br></br>
+// 	      <h3 className='punchline'> {this.props.punchline} </h3>
+// 			</div>
+// 		)
+// 	}
+
+	// 	if (this.joke.question === '') {
+	// 		return(
+  //       <div className='jokeContainer'>
+  //         <h2 className='punchline' style={{ marginTop:0, color:'green'}} > {this.props.punchline} </h2>
+  //       </div>
+  //     )
+  //   }
+  //   else
+  //   return(
+  //     <div className='jokeContainer'>
+  //       <h2 className='question'> {this.props.question} </h2> <br></br>
+  //       <h3 className='punchline'> {this.props.punchline} </h3>
+  //     </div>
+	// 	)
+  // }
 // }
 
 // //	*Shorter logic*
@@ -64,28 +84,5 @@ import JokesList from '../jokesList'
 //     </div>
 //   )
 // }
-
-// *Arrow fct style*
-
-class Joke extends React.Component {
-	render() {
-		// const Joke = (props) => {
-			if (this.props.question === '') {
-				return(
-					<div className='jokeContainer'>
-						<h2 className='punchline' style={{ marginTop:0, color:'green'}} > {this.props.punchline} </h2>
-					</div>
-				)
-			}
-			else
-			return(
-				<div className='jokeContainer'>
-					<h2 className='question'> {this.props.question} </h2> <br></br>
-					<h3 className='punchline'> {this.props.punchline} </h3>
-				</div>
-			)
-		}
-	}
-	
 
 export default Joke
