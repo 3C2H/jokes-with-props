@@ -3,10 +3,18 @@ import '../style/joke.css'
 import JokesList from '../jokesList'
 
 function Joke(props) {
+	if (props.joke.question === '') {
+		return(
+			<div className='jokeContainer'>
+				<h2 className='punchline' style={{ marginTop:0, color:'green'}} > {props.joke.punchline} </h2>
+			</div>
+		)
+	}
+	else
 	return(
-		<div>
+		<div className='jokeContainer'>
 			<h2 className='question'> {props.joke.question} </h2> <br></br>
-      <h3 className='punchline'> {props.joke.punchline} </h3>
+			<h3 className='punchline'> {props.joke.punchline} </h3>
 		</div>
 	)
 }
@@ -26,21 +34,21 @@ function Joke(props) {
 // 		)
 // 	}
 
-	// 	if (this.joke.question === '') {
-	// 		return(
-  //       <div className='jokeContainer'>
-  //         <h2 className='punchline' style={{ marginTop:0, color:'green'}} > {this.props.punchline} </h2>
-  //       </div>
-  //     )
-  //   }
-  //   else
-  //   return(
-  //     <div className='jokeContainer'>
-  //       <h2 className='question'> {this.props.question} </h2> <br></br>
-  //       <h3 className='punchline'> {this.props.punchline} </h3>
-  //     </div>
-	// 	)
-  // }
+// 		if (this.joke.question === '') {
+// 			return(
+//         <div className='jokeContainer'>
+//           <h2 className='punchline' style={{ marginTop:0, color:'green'}} > {this.props.punchline} </h2>
+//         </div>
+//       )
+//     }
+//     else
+//     return(
+//       <div className='jokeContainer'>
+//         <h2 className='question'> {this.props.question} </h2> <br></br>
+//         <h3 className='punchline'> {this.props.punchline} </h3>
+//       </div>
+// 		)
+//   }
 // }
 
 // //	*Shorter logic*
